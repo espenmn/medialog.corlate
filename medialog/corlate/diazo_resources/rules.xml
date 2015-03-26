@@ -40,7 +40,7 @@
     <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
- 
+     <xi:include href="/++theme++bootstrap-framework/rules/footer-narrow.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
 
     <!-- Place the content 
