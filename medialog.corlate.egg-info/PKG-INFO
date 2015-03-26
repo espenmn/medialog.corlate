@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: medialog.corlate
+Version: 0.1
+Summary: Corlate theme for Plone
+Home-page: http://github.com/espenmn/medialog.corrolate
+Author: Espen Moe-Nilssen
+Author-email: espen@medialog.no
+License: GPL version 2
+Description: Introduction
+        ============
+        
+        
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        0.1dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Keywords: Medialog theme Plone bootstrap
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
