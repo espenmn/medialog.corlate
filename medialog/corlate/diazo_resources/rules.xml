@@ -20,7 +20,7 @@
        Tiny, for example. -->
   <rules css:if-content="#visual-portal-wrapper">
 
-    <theme href="index.html" />
+    <theme href="++theme++medialog.corlate/index.html" />
 
     <!-- Head rules
          ================================================================== -->
