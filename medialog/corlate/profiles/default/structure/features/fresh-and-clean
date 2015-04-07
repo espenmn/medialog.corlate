@@ -1,5 +1,5 @@
-class: fa fa-cloud-download
-title: Easy to customize
+class: fa fa-bullhorn
+title: Fresh and Clean
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 subjects: 
 language: no
@@ -10,4 +10,3 @@ contributors:
 rights: 
 exclude_from_nav: True
 Portal-Type: Document
-

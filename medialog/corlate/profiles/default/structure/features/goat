@@ -1,4 +1,4 @@
-class: fa fa-bullhorn
+class: fa fa-comments
 title: Fresh and Clean
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 subjects: 
@@ -10,4 +10,3 @@ contributors:
 rights: 
 exclude_from_nav: True
 Portal-Type: Document
-
