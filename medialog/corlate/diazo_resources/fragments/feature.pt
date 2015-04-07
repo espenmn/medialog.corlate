@@ -12,7 +12,9 @@
                         animation-delay: 600ms; animation-name: fadeInDown;">
                         
                         <div class="feature-wrap">
-                            <i class="fa" tal:attributes="class item/class"></i>
+                            <i class="fa" 
+                            	tal:condition="exists:item/css_class"
+                            	tal:attributes="class item/css_class"></i>
                             <h2 tal:content="item/Title" />
                             <h3 tal:content="item/Description" />
                         </div>            

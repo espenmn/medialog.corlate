@@ -17,4 +17,4 @@ excludeFromNav: False
 presentation: False
 tableContents: False
 Content-Type: text/html
-class: fa fa-cloud-download
+css_class: fa fa-cloud-download

@@ -17,4 +17,4 @@ excludeFromNav: False
 presentation: False
 tableContents: False
 Content-Type: text/html
-class: fa fa-comments
+css_class: fa fa-comments

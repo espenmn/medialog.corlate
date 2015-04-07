@@ -19,4 +19,4 @@ tableContents: False
 Content-Type: text/html
 
 
-class: fa fa-bullhorn
+css_class: fa fa-bullhorn
