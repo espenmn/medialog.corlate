@@ -1,12 +1,20 @@
 id: goat
-class: fa fa-comments
 title: Goat
-exclude_from_nav: True
-Portal-Type: Document
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+subject: 
+relatedItems: 
+location: 
+language: no
+effectiveDate: 2015/04/07 20:25:00 GMT+2
 expirationDate: None
+creation_date: 2015/04/07 20:21:15.134483 GMT+2
+modification_date: 2015/04/07 20:21:54.994047 GMT+2
+creators: admin
+contributors: 
+rights: 
 allowDiscussion: False
-excludeFromNav: True
+excludeFromNav: False
 presentation: False
 tableContents: False
 Content-Type: text/html
-
+class: fa fa-cloud-download

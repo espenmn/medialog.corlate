@@ -1,14 +1,14 @@
-id: bull
-title: Bull
+id: sheep
+title: Sheep
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 subject: 
 relatedItems: 
 location: 
 language: no
-effectiveDate: 2015/04/07 20:25:00 GMT+2
+effectiveDate: 2015/04/07 20:21:43.422535 GMT+2
 expirationDate: None
-creation_date: 2015/04/07 20:21:0.783278 GMT+2
-modification_date: 2015/04/07 20:22:0.139190 GMT+2
+creation_date: 2015/04/07 20:21:40.068413 GMT+2
+modification_date: 2015/04/07 20:21:43.422910 GMT+2
 creators: admin
 contributors: 
 rights: 
@@ -17,6 +17,4 @@ excludeFromNav: False
 presentation: False
 tableContents: False
 Content-Type: text/html
-
-
-class: fa fa-bullhorn
+class: fa fa-comments
