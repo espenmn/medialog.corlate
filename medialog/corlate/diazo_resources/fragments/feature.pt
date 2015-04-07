@@ -1,6 +1,6 @@
 <section id="feature"  
 		 tal:define="folder_is nocall:context/features|nothing">
-    <div class="container"  tal:condition="folder_is">>
+    <div class="container"  tal:condition="folder_is">
         <div class="center wow fadeInDown animated" 
         	 style="visibility: visible; animation-name: fadeInDown;">
             <div class="row">
