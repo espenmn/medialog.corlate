@@ -26,6 +26,10 @@ h1,h2,h3,h4,h5,h6 {
 	color: #333;
 }
 
+#feature h2 {
+	font-size:  20px;;
+}
+
 .visualIEFloatFix div.description {
 	margin-bottom: 0.7em;
 }
@@ -52,3 +56,4 @@ span#plone-image-details {
 	font-size: 120%;
 	line-height: 160%;
 }
+
