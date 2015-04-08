@@ -1,3 +1,5 @@
+/* @override http://localhost:8080/cor/++theme++medialog.corlate/++theme++medialog.corlate/static/css/main.css */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
 
@@ -892,15 +894,7 @@ a.accordion-toggle  i{
   border-right: 1px solid #e6e6e6;
 }
 
-.nav-tabs>li>a {
-  background: #f5f5f5;
-  color: #666;
-  border-radius: 0;
-  border: 0 none;
-  line-height: 24px;
-  margin-right:0;
-  padding: 13px 15px;
-}
+ 
 
 .nav-tabs li:last-child{
   border-bottom: 0 none;
@@ -909,33 +903,7 @@ a.accordion-toggle  i{
 .nav-stacked>li+li{
   margin-top: 0;
 }
-
-.nav-tabs>li>a:hover{
-  background: #1f1f20;
-  color:#fff;
-}
-
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:hover, 
-.nav-tabs>li.active>a:focus {
-  border: 0;
-  color:#fff;
-  background: #1f1f20;
-  position: relative;
-}
-
-.nav-tabs>li.active>a:after {
-  position: absolute;
-  content:  "";
-  width: auto;
-  height: auto;
-  border-style:solid;
-  border-color: transparent transparent transparent #1f1f20;
-  border-width: 25px 22px;
-  right: -44px;
-  top:0;
-}
-
+  
 .tab-wrap{
   border:1px solid #e6e6e6;
   margin-bottom: 20px;
