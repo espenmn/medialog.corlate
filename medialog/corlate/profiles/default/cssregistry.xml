@@ -24,7 +24,7 @@
       available keys and default values.
       
       The expression 'request/HTTP_X_THEME_ENABLED' can be used to apply a 
-      CSS file only in the Diazo childthemed site. Add 'not:' to the
+      CSS file only in the Diazo themed site. Add 'not:' to the
       beginning of the expression to apply it only to the unchildthemed
       site (can good for Plone's public.css, portlet.css, columns.css
       so as not to conflict with your Diazo childtheme).
@@ -41,7 +41,7 @@
     expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
   
  <stylesheet title=""
-    id="++childtheme++medialog.corlate/static/main.css"
+    id="++theme++medialog.corlate/static/main.css"
     media="screen" rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="request/HTTP_X_THEME_ENABLED"

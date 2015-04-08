@@ -40,16 +40,18 @@
     <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
-     <xi:include href="/++theme++bootstrap-framework/rules/footer-narrow.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/footer-narrow.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
 
     <!-- Place the content 
          .................................................................. -->
     <drop css:theme-children="body"/>
     <after css:theme-children="body" css:content-children="body"/>
- 
-    <after css:theme-children="body" css:content="#feature" href="/@@theme-fragment/feature" />
+
+   <!-- after css:theme-children="body" css:content="#mainslider"  href="/@@theme-fragment/mainslider" / -->
    
+    <after css:theme-children="body" css:content="#feature"     href="/@@theme-fragment/feature" />
+  
 
   </rules>
   

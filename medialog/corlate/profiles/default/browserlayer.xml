@@ -4,5 +4,5 @@
      when this product is installed. -->
 <layers>
     <layer name="medialog.corlate.customization.layer"
-      interface="medialog.corlate.interfaces.ICustomChildTheme" />
+      interface="medialog.corlate.interfaces.ICustomTheme" />
 </layers>
