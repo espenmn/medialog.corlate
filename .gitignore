@@ -2,3 +2,9 @@
 medialog/corlate/profiles/default/structure/.properties
 
 medialog/corlate/profiles/default/structure/features/.properties
+
+medialog.corlate.egg-info/requires.txt
+
+medialog.corlate.egg-info/requires.txt
+
+*.pyc

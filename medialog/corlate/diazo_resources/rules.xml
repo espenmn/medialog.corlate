@@ -51,6 +51,8 @@
    <!-- after css:theme-children="body" css:content="#mainslider"  href="/@@theme-fragment/mainslider" / -->
    
     <after css:theme-children="body" css:content="#feature"     href="/@@theme-fragment/feature" />
+    <!-- after css:theme-children="body" css:content="#edit-bar"    / -->
+
   
 
   </rules>

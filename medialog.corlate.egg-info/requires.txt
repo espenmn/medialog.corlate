@@ -1,4 +1,0 @@
-setuptools
-plone.app.theming
-z3c.jbot
-diazotheme.frameworks
