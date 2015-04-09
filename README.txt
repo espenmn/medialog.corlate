@@ -2,5 +2,6 @@ Introduction
 ============
 
 
+This is gonna be hard ....
 
-This product may contain traces of nuts.
+Everything from Plone 4 breaks...
