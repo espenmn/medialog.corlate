@@ -24,37 +24,51 @@
 
     <!-- Head rules
          ================================================================== -->
-    <xi:include href="/++theme++bootstrap-framework/rules/head-base.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/head-theme.xml"/>
-
+   
     <!-- Body rules
          ================================================================== -->
     <!-- xi:include href="/++theme++bootstrap-framework/rules/header-inverse.xml"/ -->
-    <xi:include href="/++theme++bootstrap-framework/rules/header.xml"/>
    
     <xi:include href="/++theme++bootstrap-framework/rules/grid.xml"/>
-    <xi:include href="header.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/lead.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/content.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/footer-narrow.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
+     
+            <!-- Replace title with Plone's page title  -->
+        <replace css:theme="html head title" css:content="html head title" />
+
+        <!-- Copy base tag from Plone -->
+        <before css:theme-children="html head" css:content="html head base" />
+
+        <!-- Copy link, style, meta tags from Plone head -->
+        <after css:theme-children="html head"
+               content="/html/head/link | /html/head/style | /html/head/meta" />
+
+        <!-- merge classes from Plone body with theme body -->
+        <merge attributes="class" css:theme="body" css:content="body" />
+
+        <!-- Copy script tags from Plone head to end of body -->
+        <after css:theme-children="html body" css:content="html head script" />
+
+      
 
     <!-- Place the content 
          .................................................................. -->
-    <drop css:theme-children="body"/>
-    <after css:theme-children="body" css:content-children="body"/>
-
-   <!-- after css:theme-children="body" css:content="#mainslider"  href="/@@theme-fragment/mainslider" / -->
    
-    <after css:theme-children="body" css:content="#feature"     href="/@@theme-fragment/feature" />
-    <!-- after css:theme-children="body" css:content="#edit-bar"    / -->
+   <replace css:content="#portal-column-content" css:theme="#portal-column-content" />
+   <!-- after css:theme-children="body" css:content="#mainslider"  href="/@@theme-fragment/mainslider" / -->
 
-  
+    <replace css:theme-children="#header"    css:content="#header"     href="/@@theme-fragment/header" />
+
+    <replace css:theme-children="#feature" css:content="#feature"    href="/@@theme-fragment/feature" />   
+    <replace css:theme-children="#footer"    css:content="#footer"     href="/@@theme-fragment/footer" />
+    <replace css:theme-children="#services"  css:content="#services"   href="/@@theme-fragment/services" /> 
+
 
   </rules>
   
 </rules>
+
+
+  

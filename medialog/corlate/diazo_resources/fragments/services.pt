@@ -1,0 +1,35 @@
+<section id="services" class="service-item"
+		 tal:define="folder_is nocall:context/services|nothing">
+    <div class="container"  tal:condition="folder_is">
+    
+      <div class="container">
+           <div class="center wow fadeInDown animated" 
+           		style="visibility: visible; animation-name: fadeInDown;">
+                <h2 tal:content="context/services/Title" />
+                <p class="lead" 
+                	tal:content="context/services/Description"  />
+            </div>
+
+            <div class="row">
+                <div class="services" >
+                    <div tal:repeat="item  context/services/@@folderListing" 
+                        class="col-md-4 col-sm-6 wow fadeInDown animated" 
+                        data-wow-delay="600ms" data-wow-duration="1000ms" 
+                        style="visibility: visible; animation-duration: 1000ms; 
+                        animation-delay: 600ms; animation-name: fadeInDown;">
+                        
+                        <div  class="media services-wrap wow fadeInDown animated" 
+                        	  style="visibility: visible; animation-name: fadeInDown;">
+                            <i class="fa" 
+                            	tal:condition="exists:item/css_class"
+                            	tal:attributes="class item/css_class"></i>
+                            <h3 class="media-heading" tal:content="item/Title" />
+                            <p tal:content="item/Description" />
+                        </div>            
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

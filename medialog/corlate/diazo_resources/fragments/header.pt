@@ -1,0 +1,43 @@
+
+<!-- Header -->
+<header id="header" class="switcher-bar clearfix">
+
+	<!-- Logo -->
+	<div class="logo textual pull-left">
+		<a href="http://shapebootstrap.net/author/shapebootstrap/" title="shapebootstrap">
+			shapebootstrap		</a>
+	</div>
+
+	<!-- Product Switcher -->
+	<div class="product-switcher pull-left">
+		<a href="#" title="Select a Product">
+			Select an Item <span>+</span>
+		</a>
+	</div>
+
+	<!-- Bar Remove Button -->
+	<div class="remove-btn header-btn pull-right">
+		<a href="#" title="Close this bar" class="fa fa-remove"></a>
+	</div>
+
+	<!-- Purchase Button -->
+	<div class="purchase-btn header-btn pull-right">
+		<a href="#" title="Purchase" class="fa fa-download"></a>
+	</div>
+
+	<!-- Mobile Button -->
+	<div class="mobile-btn header-btn pull-right hidden-xs">
+		<a href="#" title="Smartphone View" class="fa fa-mobile-phone"></a>
+	</div>
+
+	<!-- Tablet Button -->
+	<div class="tablet-btn header-btn pull-right hidden-xs">
+		<a href="#" title="Tablet View" class="fa fa-tablet"></a>
+	</div>
+
+	<!-- Desktop Button -->
+	<div class="desktop-btn header-btn pull-right hidden-xs">
+		<a href="#" title="Desktop View" class="fa fa-desktop"></a>
+	</div>
+
+</header>

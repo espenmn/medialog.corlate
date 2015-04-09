@@ -1,0 +1,24 @@
+
+<footer id="footer" class="midnight-blue">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+© 2013
+<a title="Free Twitter Bootstrap WordPress Themes and HTML templates" href="http://shapebootstrap.net/" target="_blank">ShapeBootstrap</a>
+. All Rights Reserved.
+</div>
+<div class="col-sm-6">
+<ul class="pull-right">
+<li>
+<a href="#">Home</a>
+</li>
+<li>
+<a href="#">About Us</a>
+</li>
+<li>
+<li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
