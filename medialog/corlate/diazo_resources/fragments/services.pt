@@ -19,12 +19,20 @@
                         animation-delay: 600ms; animation-name: fadeInDown;">
                         
                         <div  class="media services-wrap wow fadeInDown animated" 
+                        	  tal:define="item_url item/getURL|item/absolute_url"
                         	  style="visibility: visible; animation-name: fadeInDown;">
-                            <i class="fa" 
-                            	tal:condition="exists:item/css_class"
-                            	tal:attributes="class item/css_class"></i>
-                            <h3 class="media-heading" tal:content="item/Title" />
-                            <p tal:content="item/Description" />
+                        	<span  class="col-md-3">
+                      	    <img src="" alt=""  
+                      	    	class="img-responsive pull-left"
+                      	    	tal:attributes="alt item/Title; src item_url" />
+                      	    </span>
+    						<div class="col-md-9">
+                            	<a href="#"
+                           			tal:attributes="href item_url">
+                            	<h3 class="media-heading" tal:content="item/Title" />
+                            	</a>
+                            	<p tal:content="item/Description" />
+                            </div>
                         </div>            
 
                     </div>
@@ -33,3 +41,5 @@
         </div>
     </div>
 </section>
+
+ 
