@@ -2,44 +2,44 @@
 		 tal:define="folder_is nocall:context/services|nothing">
     <div class="container"  tal:condition="folder_is">
     
-      <div class="container">
-           <div class="center wow fadeInDown animated" 
+        <div class="container">
+            <div class="center wow fadeInDown animated" 
            		style="visibility: visible; animation-name: fadeInDown;">
                 <h2 tal:content="context/services/Title" />
                 <p class="lead" 
                 	tal:content="context/services/Description"  />
             </div>
-
+            
             <div class="row">
-                <div class="services" >
-                    <div tal:repeat="item  context/services/@@folderListing" 
-                        class="col-md-4 col-sm-6 wow fadeInDown animated" 
+				<div tal:repeat="item  context/services/@@folderListing" 
+                    	class="col-md-4 col-sm-6 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
                         animation-delay: 600ms; animation-name: fadeInDown;">
-                        
-                        <div  class="media services-wrap wow fadeInDown animated" 
-                        	  tal:define="item_url item/getURL|item/absolute_url"
-                        	  style="visibility: visible; animation-name: fadeInDown;">
-                        	<span  class="col-md-3">
-                      	    <img src="" alt=""  
+					
+					<div class="media services-wrap wow fadeInDown animated" 
+					 	tal:define="item_url item/getURL|item/absolute_url"
+						style="visibility: visible; animation-name: fadeInDown;">
+						<div class="pull-left">
+							<img src="" alt=""  
                       	    	class="img-responsive pull-left"
-                      	    	tal:attributes="alt item/Title; src item_url" />
-                      	    </span>
-    						<div class="col-md-9">
+                      	    	tal:attributes="alt item/Title; 
+                      	    		src python:item_url + '/@@images/image'" />
+						</div>
+						<div class="media-body">
                             	<a href="#"
                            			tal:attributes="href item_url">
                             	<h3 class="media-heading" tal:content="item/Title" />
                             	</a>
                             	<p tal:content="item/Description" />
-                            </div>
-                        </div>            
-
+                            	
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    	</div>
+ 	</div>
 </section>
 
  
+    

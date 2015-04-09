@@ -12,22 +12,11 @@
 
     <theme href="++theme++medialog.corlate/index.html" />
  
-    <xi:include href="/++theme++bootstrap-framework/rules/grid.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/content.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
-    
-        <xi:include href="/++theme++bootstrap-framework/rules/header-inverse.xml"/>
+    <replace css:theme="#feature"     css:content="#feature"     href="/@@theme-fragment/feature" />   
+    <replace css:theme="#services"    css:content="#services"    href="/@@theme-fragment/services" /> 
+    <replace css:theme="#footer"      css:content="#footer"      href="/@@theme-fragment/footer" />
+    <replace css:theme="#main-slider" css:content="#main-slider" href="/@@theme-fragment/mainslider" />
 
- 
-
-    <replace css:theme="#feature" css:content="#feature"    href="/@@theme-fragment/feature" />   
-    
-    <replace css:theme="#services"  css:content="#services"   href="/@@theme-fragment/services" /> 
-   
-    <replace css:theme="#footer"    css:content="#footer"     href="/@@theme-fragment/footer" />
-    
   <notheme css:if-not-content="#visual-portal-wrapper" />
 
   <rules if-content="//*[@id='portal-top']">
