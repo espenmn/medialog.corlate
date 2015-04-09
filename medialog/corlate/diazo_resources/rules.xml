@@ -59,11 +59,11 @@
    <replace css:content="#portal-column-content" css:theme="#portal-column-content" />
    <!-- after css:theme-children="body" css:content="#mainslider"  href="/@@theme-fragment/mainslider" / -->
 
-    <replace css:theme-children="#header"    css:content="#header"     href="/@@theme-fragment/header" />
+    <replace css:theme="#header"    css:content="#header"     href="/@@theme-fragment/header" />
 
-    <replace css:theme-children="#feature" css:content="#feature"    href="/@@theme-fragment/feature" />   
-    <replace css:theme-children="#footer"    css:content="#footer"     href="/@@theme-fragment/footer" />
-    <replace css:theme-children="#services"  css:content="#services"   href="/@@theme-fragment/services" /> 
+    <replace css:theme="#feature" css:content="#feature"    href="/@@theme-fragment/feature" />   
+    <replace css:theme="#footer"    css:content="#footer"     href="/@@theme-fragment/footer" />
+    <replace css:theme="#services"  css:content="#services"   href="/@@theme-fragment/services" /> 
 
 
   </rules>
