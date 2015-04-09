@@ -23,11 +23,11 @@
 							</div>
 						</div>
 
-						<div class="col-sm-6 hidden-xs animation animated-item-4">
+						<!-- div class="col-sm-6 hidden-xs animation animated-item-4">
 							<div class="slider-img">
 								<img src="" alt="" tal:attributes="src image_url"/>
 							</div>
-						</div>
+						</div -->
 
 					</div>
 				</div>
