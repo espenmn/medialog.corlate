@@ -8,3 +8,5 @@ medialog.corlate.egg-info/requires.txt
 medialog.corlate.egg-info/requires.txt
 
 *.pyc
+
+*.swp
