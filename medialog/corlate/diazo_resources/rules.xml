@@ -121,9 +121,10 @@
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
          
-    <xi:include href="header.xml"/>
-
+    
     <xi:include href="/++theme++bootstrap-framework/rules/footer.xml"/>
+    
+    <drop css:content-children="#content-header"/>
 
 </rules>
 
