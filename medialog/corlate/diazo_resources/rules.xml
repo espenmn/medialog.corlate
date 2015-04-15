@@ -5,18 +5,10 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <!-- The condition makes sure that theme is only applied when served in the 
-       plone main_template. This is necessary for functional edit popups in 
-       Tiny, for example. -->
- 
 
-    <theme href="++theme++medialog.corlate/index.html" />
- 
-          
-   <xi:include href="/++theme++bootstrap-framework/rules/header-inverse.xml"/>
-
+  <theme href="++theme++medialog.corlate/index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
-
+  
   <rules if-content="//*[@id='portal-top']">
     <!-- Attributes -->
     <copy attributes="*" theme="/html" content="/html"/>
@@ -48,21 +40,24 @@
   </xsl:variable>
 
   <!-- move global nav -->
-    <replace css:theme="#portal-logo"     css:content="#portal-logo" />
-    <replace css:theme="#portal-globalnav"     css:content-children="#portal-globalnav" />
-      
-    
+  <replace css:theme="#portal-logo"          css:content="#portal-logo" />
+  <replace css:theme="#portal-globalnav"     css:content-children="#portal-globalnav" />
 
-  <!-- hero unit on homepage only -->
-  <drop css:if-not-content="body.template-document_view.section-front-page"
-        css:theme="div.principal" />
+
+  <!-- sections on homepage only -->
+  <rules css:if-content="body.template-document_view.section-front-page">
+	<replace css:theme="#feature"     css:content="#feature"     href="/@@theme-fragment/feature" />   
+    <replace css:theme="#services"    css:content="#services"    href="/@@theme-fragment/services" /> 
+    <replace css:theme="#footer"      css:content="#footer"      href="/@@theme-fragment/footer" />
+    <replace css:theme="#main-slider" css:content="#main-slider" href="/@@theme-fragment/mainslider" />
+</rules>
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
 
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
-            <!--           <p class="pull-right visible-xs">
+<!--           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p> -->
           <div class="row">
@@ -79,14 +74,6 @@
           </footer>
       </div><!--/row-->
   </replace>
- 
- 
-  <!--replace css:theme="#outer-wrapper"     css:content="#outer-wrapper"    /-->   
-  <replace css:theme="#feature"     css:content="#feature"     href="/@@theme-fragment/feature" />   
-  <replace css:theme="#services"    css:content="#services"    href="/@@theme-fragment/services" /> 
-  <replace css:theme="#footer"      css:content="#footer"      href="/@@theme-fragment/footer" />
-  <replace css:theme="#main-slider" css:content="#main-slider" href="/@@theme-fragment/mainslider" />
-   <!-- replace css:theme="#navbar" css:content="#navbar" href="/@@theme-fragment/navbartest" / -->
 
   <!-- Alert message -->
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
@@ -115,13 +102,10 @@
 
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
-
+ 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
-    
-    <xi:include href="/++theme++bootstrap-framework/rules/footer.xml"/>
-   
-</rules>
 
- 
+
+</rules>
