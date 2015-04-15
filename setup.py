@@ -27,6 +27,7 @@ setup(name='medialog.corlate',
       install_requires=[
           'setuptools',
           'plone.app.theming',
+          'collective.js.bootstrap',
           'z3c.jbot',
           'diazotheme.frameworks',
           # -*- Extra requirements: -*-
