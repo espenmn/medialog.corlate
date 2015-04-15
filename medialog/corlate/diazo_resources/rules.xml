@@ -48,10 +48,14 @@
   <rules css:if-content="body.template-document_view.section-front-page">
 	<replace css:theme="#feature"     css:content="#feature"     href="/@@theme-fragment/feature" />   
     <replace css:theme="#services"    css:content="#services"    href="/@@theme-fragment/services" /> 
-    <replace css:theme="#footer"      css:content="#footer"      href="/@@theme-fragment/footer" />
     <replace css:theme="#main-slider" css:content="#main-slider" href="/@@theme-fragment/mainslider" />
-</rules>
+  </rules>
 
+  <rules css:if-not-content="body.template-document_view.section-front-page">
+    <drop css:content="#feature" />    
+    <drop css:content="#services" />
+  </rules>
+    
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
 
@@ -101,8 +105,9 @@
   </rules>
 
   <!-- Content header -->
-  <replace css:theme="#portal-top" css:content-children="#portal-top" />
- 
+  <replace css:theme="#portal-top"            css:content-children="#portal-top" />
+  <replace css:theme="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />
+
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
