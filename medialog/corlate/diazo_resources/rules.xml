@@ -84,9 +84,9 @@
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 
   <!-- Left column -->
-  <rules if-content="//*[@id='portal-column-one']">
+ 
     <replace css:theme="#portal-column-one" css:content="#portal-column-one" />
-  </rules>
+ 
   
   <!-- main column -->
   <rules if-content="//*[@id='portal-column-content']">
@@ -111,7 +111,10 @@
   
     <!-- xi:include href="/++theme++bootstrap-framework/rules/content.xml"/-->
     <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
+    <xi:include href="portletrules.xml"/>
+
+    <!-- xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/-->
     <!-- xi:include href="/++theme++bootstrap-framework/rules/general.xml"/-->
 
 
