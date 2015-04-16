@@ -113,14 +113,10 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
-  <!-- table rues -->
-    <xsl:template match="table">
-        <xsl:copy>
-            <xsl:attribute name="class">table</xsl:attribute>
-            <xsl:copy-of select="@*" />
-            <xsl:apply-templates />
-        </xsl:copy>
-    </xsl:template>
+  <!-- table rules -->
+<add content="//table">
+    <xsl:attribute name="class"><xsl:value-of select="."/> table</xsl:attribute>
+</add>
   
       <!-- Body rules
          ================================================================== -->
