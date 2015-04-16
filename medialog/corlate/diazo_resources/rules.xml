@@ -33,10 +33,10 @@
 
   <!-- Central column -->
   <xsl:variable name="central">
-    <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
-    <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-9</xsl:if>
-    <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-9</xsl:if>
-    <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']"> col-xs-12 col-sm-6 </xsl:if>
+    <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])"> col-xs-12 col-sm-9 </xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])"> col-xs-12 col-sm-9 </xsl:if>
+    <xsl:if test="not(//div[@id='portal-column-one']) and not(//div[@id='portal-column-two'])"> col-xs-12 col-sm-12 </xsl:if>
   </xsl:variable>
 
   <!-- move global nav -->
@@ -62,22 +62,15 @@
 
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
-<!--           <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p> -->
-          <div class="row">
-            <div class="col-xs-12 col-sm-12">
-               <xsl:copy-of select="//article[@id='content']"/>
-               <!-- Just in case for legacy templates -->
-               <xsl:copy-of select="//div[@id='content']"/>
-            </div>
-          </div>
-          <footer class="row">
-            <div class="col-xs-12 col-sm-12">
-             <xsl:copy-of select="//div[@id='viewlet-below-content']"/>
-            </div>
-          </footer>
-      </div><!--/row-->
+		 <xsl:apply-templates css:select="#content" />
+	</div>
+  </replace>
+  
+  
+    <replace content="//*[@id='portal-column-one']|//*[@id='portal-column-two']">
+      <aside class="col-xs-12 col-sm-3">
+          <xsl:apply-templates select="./*"/>
+      </aside>
   </replace>
 
   <!-- Alert message -->
@@ -88,15 +81,12 @@
     <replace css:theme="#portal-column-one" css:content="#portal-column-one" />
  
   
-  <!-- main column -->
-  <rules if-content="//*[@id='portal-column-content']">
-    <replace css:theme="#portal-column-content" css:content="#portal-column-content" />
-  </rules>
+ 
 
    <!-- Right column -->
-  <rules if-content="//*[@id='portal-column-two']">
+ 
     <replace css:theme="#portal-column-two" css:content="#portal-column-two" />
-  </rules>
+ 
 
   <!-- Content header -->
   <replace css:theme="#portal-top"            css:content-children="#portal-top" />
@@ -111,7 +101,7 @@
   
     <!-- xi:include href="/++theme++bootstrap-framework/rules/content.xml"/-->
     <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
+ 
     <xi:include href="portletrules.xml"/>
 
     <!-- xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/-->
