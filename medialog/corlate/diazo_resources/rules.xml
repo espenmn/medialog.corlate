@@ -85,24 +85,17 @@
 
   <!-- Left column -->
   <rules if-content="//*[@id='portal-column-one']">
-    <replace css:theme="#column1-container">
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-          <aside id="portal-column-one">
-             <xsl:copy-of select="//*[@id='portal-column-one']/*"/>
-          </aside>
-        </div>
-    </replace>
+    <replace css:theme="#portal-column-one" css:content="#portal-column-one" />
+  </rules>
+  
+  <!-- main column -->
+  <rules if-content="//*[@id='portal-column-content']">
+    <replace css:theme="#portal-column-content" css:content="#portal-column-content" />
   </rules>
 
-  <!-- Right column -->
+   <!-- Right column -->
   <rules if-content="//*[@id='portal-column-two']">
-    <replace css:theme="#column2-container">
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="complementary">
-          <aside id="portal-column-two">
-             <xsl:copy-of select="//*[@id='portal-column-two']/*"/>
-          </aside>
-        </div>
-    </replace>
+    <replace css:theme="#portal-column-two" css:content="#portal-column-two" />
   </rules>
 
   <!-- Content header -->
@@ -113,21 +106,13 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
-  <!-- table rules -->
-<add content="//table">
-    <xsl:attribute name="class"><xsl:value-of select="."/> table</xsl:attribute>
-</add>
+ 
+      <!-- Body INCLUDES============================================================== -->
   
-      <!-- Body rules
-         ================================================================== -->
-   
-    <xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/content.xml"/>
+    <!-- xi:include href="/++theme++bootstrap-framework/rules/content.xml"/-->
     <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
     <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
-    <xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
-    
-
+    <!-- xi:include href="/++theme++bootstrap-framework/rules/general.xml"/-->
 
 
 </rules>
