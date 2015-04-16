@@ -57,7 +57,7 @@
                   <li class="list-header"><xsl:apply-templates css:select=".portletHeader > *"/></li>
                   <li class="divider"></li>
               </xsl:if>
-              <xsl:apply-templates select="./dd/ul/*"/>
+              <xsl:apply-templates css:select=".navTree li"/>
               <xsl:if css:test=".portletFooter">
                   <li class="divider"></li>
                   <li><xsl:apply-templates css:select=".portletFooter > *"/></li>
@@ -100,11 +100,7 @@
       </article>
   </replace>
 
-  <strip css:content=".portletHeader"/>
-  <strip css:content=".portletLogin br"/>
-  <strip css:content="span[class*='portlet']"/>
-  <strip css:content=".portletItem"/>
-  <strip css:content=".portletFooter"/>
+ 
   
   <replace css:content="span.portletItemDetails">
       <small class="portletItemDetails muted">
