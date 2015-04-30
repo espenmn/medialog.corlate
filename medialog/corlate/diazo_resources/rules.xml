@@ -107,10 +107,18 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
+
+ 
+
   <!-- selected portaltab -->
-  <!-- replace content="//*[@id='header']/nav/div/div[2]/ul/li[@class='selected']/@class" -->
+  <!--replace content="//*[@id='header']/nav/div/div[2]/ul/li[@class='selected']/@class" -->
   <replace content="//*[@class='selected']/@class">
       <xsl:attribute name="class">active</xsl:attribute>
+  </replace>
+ 
+  <!-- add table class -->
+  <replace content="//*[@class='listing']/@class">
+    <xsl:attribute name="class">table</xsl:attribute>
   </replace>
  
       <!-- Body INCLUDES============================================================== -->
