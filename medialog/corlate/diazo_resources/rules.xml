@@ -62,8 +62,22 @@
 
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
-		 <xsl:apply-templates css:select="#content" />
-	</div>
+<!--           <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p> -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+               <xsl:copy-of select="//article[@id='content']"/>
+               <!-- Just in case for legacy templates -->
+               <xsl:copy-of select="//div[@id='content']"/>
+            </div>
+          </div>
+          <footer class="row">
+            <div class="col-xs-12 col-sm-12">
+             <xsl:copy-of select="//div[@id='viewlet-below-content']"/>
+            </div>
+          </footer>
+      </div><!--/row-->
   </replace>
   
   
@@ -76,17 +90,13 @@
   <!-- Alert message -->
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 
-  <!-- Left column -->
- 
+  <!-- Left column --> 
     <replace css:theme="#portal-column-one" css:content="#portal-column-one" />
  
-  
- 
-
    <!-- Right column -->
- 
     <replace css:theme="#portal-column-two" css:content="#portal-column-two" />
- 
+    <replace css:theme="#portal-column-content" css:content="#main-container" />
+
 
   <!-- Content header -->
   <replace css:theme="#portal-top"            css:content-children="#portal-top" />

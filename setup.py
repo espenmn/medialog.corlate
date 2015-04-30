@@ -30,6 +30,7 @@ setup(name='medialog.corlate',
           'collective.js.bootstrap',
           'z3c.jbot',
           'diazotheme.frameworks',
+          'collective.themefragments',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
