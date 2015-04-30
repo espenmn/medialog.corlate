@@ -56,6 +56,7 @@
     <drop css:content="#services" />
   </rules>
 
+
     
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
@@ -106,6 +107,10 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
+  <!-- selected portaltab -->
+  <replace content="//*[@class='selected']/@class">
+      <xsl:attribute name="class">active</xsl:attribute>
+  </replace>
  
       <!-- Body INCLUDES============================================================== -->
   
