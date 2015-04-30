@@ -61,6 +61,7 @@
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
 
+
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
 <!--           <p class="pull-right visible-xs">
@@ -115,11 +116,7 @@
   <replace content="//*[@class='selected']/@class">
       <xsl:attribute name="class">active</xsl:attribute>
   </replace>
- 
-  <!-- add table class -->
-  <replace content="//*[@class='listing']/@class">
-    <xsl:attribute name="class">table</xsl:attribute>
-  </replace>
+
  
       <!-- Body INCLUDES============================================================== -->
   
