@@ -1,13 +1,13 @@
 <section id="services" class="service-item"
-		 tal:define="folder_is nocall:context/services|nothing">
+		 tal:define="folder_is nocall:context/services-1|nothing">
     <div class="container"  tal:condition="folder_is">
     
         <div class="container">
             <div class="center wow fadeInDown animated" 
            		style="visibility: visible; animation-name: fadeInDown;">
-                <h2 tal:content="context/services/Title" />
+                <h2 tal:content="context/services-1/Title" />
                 <p class="lead" 
-                	tal:content="context/services/Description"  />
+                	tal:content="context/services-1/Description"  />
             </div>
             
             <div class="row">
