@@ -21,6 +21,9 @@
                             <i class="fa" 
                             	tal:condition="exists:item/css_class"
                             	tal:attributes="class item/css_class"></i>
+                             <i class="fa fa-info" 
+                            	tal:condition="not:exists:item/css_class">
+                             </i>
                             <h2 tal:content="item/Title" />
                             <h3 tal:content="item/Description" />
                         </div>            

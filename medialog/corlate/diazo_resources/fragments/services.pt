@@ -23,10 +23,17 @@
 						style="visibility: visible; animation-name: fadeInDown;">
 						<div class="pull-left">
 							<img src="" alt=""  
+							    tal:condition="python: item.image"
                       	    	class="img-responsive pull-left"
                       	    	tal:attributes="alt item/Title; 
                       	    		src python:item_url + '/@@images/image'" />
+                      	    <img src="http://www.veryicon.com/icon/png/Application/Crystal%20Project%20Application/Service%20Manager.png" 
+                      	        alt=""  
+							    tal:condition="not: python: item.image"
+                      	    	class="img-responsive pull-left"
+                      	    	tal:attributes="alt item/Title;" />
 						</div>
+						 
 						<div class="media-body">
                             	<a href="#"
                            			tal:attributes="href item_url">
