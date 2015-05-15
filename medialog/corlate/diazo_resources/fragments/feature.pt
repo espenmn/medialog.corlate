@@ -1,7 +1,6 @@
 <section id="feature"  
 		 tal:define="folder_is nocall:context/features|nothing">
     <div class="container"  tal:condition="folder_is">
-    
       <div class="container">
            <div class="center wow fadeInDown">
                 <h2 tal:content="context/features/Title" />
@@ -11,7 +10,8 @@
 
             <div class="row">
                 <div class="features" >
-                    <div tal:repeat="item  context/features/@@folderListing" 
+                    <div tal:repeat="item 
+                    	python:context.restrictedTraverse('@@folderListing')(Subject='features')"
                         class="col-md-4 col-sm-6 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 

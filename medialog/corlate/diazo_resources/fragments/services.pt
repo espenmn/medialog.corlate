@@ -11,7 +11,8 @@
             </div>
             
             <div class="row">
-				<div tal:repeat="item  context/services/@@folderListing" 
+				<div tal:repeat="item  
+				        python:context.restrictedTraverse('@@folderListing')(Subject='services')"
                     	class="col-md-4 col-sm-6 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 

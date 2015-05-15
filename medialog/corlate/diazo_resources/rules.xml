@@ -54,10 +54,9 @@
   </rules>
 
   <rules css:if-not-content="body.template-document_view.section-front-page">
-    <drop css:content="#feature" />    
-    <drop css:content="#services" />
+    <drop css:theme="#feature" />    
+    <drop css:theme="#services" />
   </rules>
-
 
 
   <!-- search box -->
