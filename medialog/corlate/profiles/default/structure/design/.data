@@ -1,11 +1,9 @@
-exclude_from_nav: False
-title: Features
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit,
- sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut
- enim ad minim veniam
-subjects: 
+exclude_from_nav: True
+title: Design
+description: We can do anything
+subjects: services
 language: no
-effective: 2015-05-15T12:31:50
+effective: 2015-05-15T13:34:00
 expires: 
 creators: admin
 contributors: 
@@ -27,14 +25,13 @@ content: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  </div> </div></div></body></html>
 pageSiteLayout: 
 sectionSiteLayout: 
-query: 
-sort_on: 
-sort_reversed: False
-limit: 1000
-item_count: 30
-customViewFields: Title||Creator||Type||ModificationDate
-id: features
+changeNote: 
+image_caption: 
+id: design
 relatedItems: 
 allow_discussion: 
-Portal-Type: Collection
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Portal-Type: News Item
 
+Nothing is impossible for the one that does not have to do it himself

@@ -1,11 +1,10 @@
-exclude_from_nav: False
-title: Features
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit,
- sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut
- enim ad minim veniam
-subjects: 
+css_class: fa fa-comments
+exclude_from_nav: True
+title: Retina ready
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+subjects: features
 language: no
-effective: 2015-05-15T12:31:50
+effective: 2015-05-15T11:46:00
 expires: 
 creators: admin
 contributors: 
@@ -24,17 +23,18 @@ content: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  mosaic-tile mosaic-plone.app.standardtiles.description-tile"> <div
  class="mosaic-tile-content"> <div
  data-tile="./@@plone.app.standardtiles.description"></div> </div> </div>
- </div> </div></div></body></html>
+ </div> </div> <div class="mosaic-grid-row"> <div class="mosaic-grid-cell
+ mosaic-width-full mosaic-position-leftmost"> <div class="movable removable
+ mosaic-tile mosaic-IRichText-text-tile"> <div class="mosaic-tile-content">
+ <div
+ data-tile="./@@plone.app.standardtiles.field?field=IRichText-text"></div>
+ </div> </div> </div> </div></div></body></html>
 pageSiteLayout: 
 sectionSiteLayout: 
-query: 
-sort_on: 
-sort_reversed: False
-limit: 1000
-item_count: 30
-customViewFields: Title||Creator||Type||ModificationDate
-id: features
+id: retina-ready
+changeNote: 
+table_of_contents: False
 relatedItems: 
 allow_discussion: 
-Portal-Type: Collection
+Portal-Type: Document
 

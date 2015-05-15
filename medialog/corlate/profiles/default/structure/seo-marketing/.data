@@ -1,11 +1,9 @@
-exclude_from_nav: False
-title: Features
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit,
- sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut
- enim ad minim veniam
-subjects: 
+exclude_from_nav: True
+title: SEO Marketing
+description: Lorem ipsum dolor sit ame consectetur adipisicing elit
+subjects: services
 language: no
-effective: 2015-05-15T12:31:50
+effective: 2015-05-15T13:24:00
 expires: 
 creators: admin
 contributors: 
@@ -27,14 +25,10 @@ content: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  </div> </div></div></body></html>
 pageSiteLayout: 
 sectionSiteLayout: 
-query: 
-sort_on: 
-sort_reversed: False
-limit: 1000
-item_count: 30
-customViewFields: Title||Creator||Type||ModificationDate
-id: features
+changeNote: 
+image_caption: 
+id: seo-marketing
 relatedItems: 
 allow_discussion: 
-Portal-Type: Collection
+Portal-Type: News Item
 

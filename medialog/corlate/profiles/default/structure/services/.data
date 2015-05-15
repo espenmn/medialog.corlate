@@ -1,11 +1,11 @@
 exclude_from_nav: False
-title: Features
+title: Services
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit,
  sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut
  enim ad minim veniam
 subjects: 
 language: no
-effective: 2015-05-15T12:31:50
+effective: 2015-05-15T13:14:42
 expires: 
 creators: admin
 contributors: 
@@ -33,7 +33,7 @@ sort_reversed: False
 limit: 1000
 item_count: 30
 customViewFields: Title||Creator||Type||ModificationDate
-id: features
+id: services
 relatedItems: 
 allow_discussion: 
 Portal-Type: Collection
