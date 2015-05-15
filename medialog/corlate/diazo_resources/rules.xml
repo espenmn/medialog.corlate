@@ -27,6 +27,8 @@
     <after theme-children="/html/head" content="/html/head/script" />
   </rules>
 
+
+
   <!-- Copy over the id/class attributes on the body tag.
        This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
@@ -57,7 +59,11 @@
   </rules>
 
 
-    
+
+  <!-- search box -->
+  <replace css:theme="#searchGadget_form" css:content="#searchGadget_form"/> 
+  <drop css:content="#searchGadget_form .searchSection" />
+
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
 
@@ -116,12 +122,17 @@
       <xsl:attribute name="class">active</xsl:attribute>
   </replace>
 
+
+
   <!-- add table as class to table (not working) -->
-  <replace content="//*/table[contains(@class,'listing')]/@class">
+  <replace content="//*/table[contains(@class,'listing')]/@class"  method="raw">
     <xsl:attribute name="class">
     table
     </xsl:attribute>
    </replace>
+    <replace content="//table[@class='listing']/@class">
+    <xsl:attribute name="class">table table-bordered</xsl:attribute>
+  </replace>
  
       <!-- Body INCLUDES============================================================== -->
   

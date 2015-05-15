@@ -288,6 +288,11 @@ ul.social-share li a:hover {
   color: #fff;
 }
 
+button.searchButton.btn.btn-primary {
+	margin-top: 0;
+}
+
+
 input.search-form{
   background: transparent;
   border: 0 none;
@@ -2513,6 +2518,7 @@ div.well {
   display: inline-block;
   margin-left: 15px;
 }
+
 
 
 
