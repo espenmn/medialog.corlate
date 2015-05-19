@@ -17,12 +17,13 @@
                         style="visibility: visible; animation-duration: 1000ms; 
                         animation-delay: 600ms; animation-name: fadeInDown;">
                         
-                        <div class="feature-wrap">
+                        <div class="feature-wrap fa">
                             <i class="fa" 
-                            	tal:condition="exists:item/css_class"
-                            	tal:attributes="class item/css_class"></i>
+                            	tal:condition="exists:item/iconfield"
+                            	tal:attributes="class item/iconfield">
+                            </i>
                              <i class="fa fa-info" 
-                            	tal:condition="not:exists:item/css_class">
+                            	tal:condition="not:exists:item/iconfield">
                              </i>
                             <h2 tal:content="item/Title" />
                             <h3 tal:content="item/Description" />
